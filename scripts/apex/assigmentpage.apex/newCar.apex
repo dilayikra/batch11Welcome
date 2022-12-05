@@ -1,0 +1,11 @@
+NewCar p1= new NewCar();
+p1.startCar('Volkswagen ', 'Atlas');
+p1.Accelerate(80);
+p1.checkSpeed();
+p1.Brake(55);
+p1.checkSpeed();
+p1.Accelerate(10);
+p1.checkSpeed();
+p1.Brake(40);
+p1.checkSpeed();
+p1.stopCar();
