@@ -1,0 +1,53 @@
+<template>
+    <lightning-card title="Update Record" icon-name="standard:account">
+        <div class="slds-var-m-around_medium">
+            <template lwc:if={data}>
+            <form class="accForm">
+                <lightning-input
+                type="text"
+                label="Account Name"
+                value={anyData}
+                name="Name"
+                onchange={changeHandler}>
+            </lightning-input>
+            <lightning-combobox
+                label="Type"
+                value={anyData}
+                name="Type"
+                options={typeOptions}
+                onchange={changeHandler}>
+            </lightning-combobox>
+            <lightning-combobox
+                label="Industry"
+                value={anyData}
+                name="Industry"
+                options={industryOptions}
+                onchange={changeHandler}>
+            </lightning-combobox>
+            <lightning-input
+                type="number"
+                label="Annual Revenue"
+                value={anyData}
+                name="AnnualRevenue"
+                onchange={changeHandler}>
+            </lightning-input>
+            <div class="slds-var-m-top_small slds-align_absolute-center">
+                <lightning-button
+                label="Update"
+                variant="brand"
+                onclick={saveAccount}>
+            </lightning-button>
+            </div>
+
+            </form>
+        </template>
+
+        
+        
+        
+        
+        
+        
+        </div>
+</lightning-card>
+</template>
